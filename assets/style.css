@@ -1,0 +1,158 @@
+/*
+Theme Name: HUGE
+Description: Creative Coming Soon Template
+Author: SquirrelLabs
+Author URI: https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLab
+Version: 1.0
+License: https://themeforest.net/licenses/standard
+
+---
+
+/*******************************
+  Table of Contents
+
+  1.0 Content Styles
+  2.0 Content Styles
+  3.0 Countdown
+*******************************/
+
+/**********************************/
+/******* 1.0 General Styles *******/
+/**********************************/
+html{
+  min-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400
+}
+
+/**********************************/
+/******* 2.0 Content Styles *******/
+/**********************************/
+header {
+  text-align: center;
+}
+
+header .logo {
+  height: 15vh;
+  box-sizing: content-box;
+}
+.content {
+  text-align: center;
+  position: absolute;
+  z-index: 11;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 260px;
+}
+.content h1 {
+  color: #fff;
+  font-size: 4em;
+  position: relative;
+  font-weight: 400;
+  margin: 0 1vw;
+  font-family: 'Baloo Bhaijaan',serif;
+}
+.content h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display',serif;
+}
+.content a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 12px 19px;
+  color: #fff;
+  display: inline-block;
+}
+.content a:hover {
+  opacity: 0.8;
+}
+#starfield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+  padding: 0;
+  margin: 0 0 -6px 0;
+  overflow: hidden;
+}
+#starfield canvas {
+  padding: 0;
+  margin: 0;
+}
+
+/**********************************/
+/*******    3.0 Countdown   *******/
+/**********************************/
+#countdown {
+  margin: 2vh auto 4vh;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 50%;
+}
+
+#countdown.show {
+  display: block;
+}
+
+#countdown > div {
+  position: relative;
+  float: left;
+  width: 25%;
+  font-size: 4vw;
+  font-weight: 100;
+  line-height: .8em;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ccc;
+  font-family: 'Baloo Bhaijaan',serif;
+}
+
+#countdown > div > span {
+  display: block;
+  font-size: 1.2vw;
+  font-weight: 100;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  margin-top: 20px;
+  color: #777;
+  text-transform: lowercase
+}
+
+@media (max-width:480px) {
+    #countdown {
+        width: 100%;
+    }
+    #countdown > div {
+        width: 25%;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: .8em;
+        letter-spacing: 2px;
+    }
+    #countdown > div > span {
+      font-size: 11px;
+    }
+}
